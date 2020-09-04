@@ -1,0 +1,133 @@
+// main: ../style.less
+
+.pizzeria {
+    width: 100%;
+    height: 70rem;
+    background: url("@{img}img3.png") center no-repeat;
+    background-size: cover;
+
+
+    &__title {
+    text-align: center;
+    padding-top: 6rem;
+    letter-spacing: .1rem;
+    }
+
+    &__title__text {
+    font-family: @font1;
+    font-size: 2.3rem;
+    color: @color3;
+    }
+
+    &__title__text span {
+    font-weight: 100;
+    }
+
+    &__menu__border {
+    position: absolute;
+    right: 0;
+    border: .15rem solid @color2;
+    width: 69.5rem;
+    height: 7.5rem;
+    transform: translateY(2.3rem);
+    }
+
+    &__menu__text {
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: @font1;
+    font-weight: 400;
+    color: @color3;
+    padding-right: 13rem;
+    }
+
+    &__receipt__border {
+    position: absolute;
+    transform: translateY(15.3rem);
+    z-index: 1;
+    right: 0;
+    width: 61rem;
+    height: 24.2rem;
+    background-color: @color3;
+    }
+
+    &__receipt__content {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2.5rem;
+    }
+
+    &__receipt_title span {
+    font-weight: 700;
+    padding-right: .5rem;
+    }
+
+    &__receipt_title{
+    font-family: @font3;
+    color: @color2;
+    font-size: 2rem;
+}
+
+    &__receipt__text {
+    font-family: @font3;
+    font-size: 1.98rem;
+    color: @color2;
+    padding-bottom: 1.1rem;
+    margin-top: -0.3rem;
+    }
+
+    &__price__border {
+    transform: translate(42.5rem, -32.5rem);
+    z-index: 5;
+    width: 3.5rem;
+    height: 20.2rem;
+    background-color: @color5;
+    }
+
+    &__price__border span {
+    position: absolute;
+    z-index: 1;
+    height: 5.3rem;
+    width: 3.5rem;
+    background-color: rgba(255, 218, 0, 10%);
+    transform: translate(0, 20.2rem);
+    }
+
+    &__price__content {
+    transform: translate(41.5rem, -52.5rem);
+    z-index: 5;
+    width: 2rem;
+    }
+
+    &__price__text {
+    font-family: @font3;
+    font-size: 2rem;
+    color: @color2;
+        padding-bottom: 3rem;
+    }
+
+    &__down__border {
+    border: .1rem solid @color2;
+    transform: translateY(49rem);
+    width: 54rem;
+    margin: auto;
+    }
+
+    &__down__border__content {
+    padding: .6rem 9.6rem;
+    }
+
+    &__down__border_text {
+    font-family: @font3;
+    font-weight: 400;
+    color: @color2;
+    letter-spacing: .1rem;
+    font-size: 1.44rem;;
+    opacity: .8;
+    }
+
+    &__down__border_text:nth-child(2),
+    &__down__border_text:nth-child(3), {
+        margin-top: -0.8rem;
+    }
+}
