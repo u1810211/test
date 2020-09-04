@@ -1,0 +1,75 @@
+// main: ../style.less
+
+.sub__intro {
+    height: 35rem;
+
+    &__degree {
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 3;
+    margin: 14.8rem -8rem;
+    letter-spacing: .4rem;
+    }
+
+    &__degree__text {
+    font-size: 2.9rem;
+    color: @color2;
+    font-family: @font1;
+    user-select: none;
+    }
+
+    &__content {
+    position: absolute;
+    left: 0;
+    transform: translate(5.5rem, 9rem);
+    z-index: 2;
+    }
+
+    &__text {
+    position: relative;
+    font-family: @font3;
+    transform: translate(9.2rem, -2rem);
+    font-size: 2.65rem;
+    letter-spacing: .5rem;
+    z-index: 2;
+    color: @color2;
+    user-select: none;
+    }
+
+    &__text__border {
+    position: relative;
+    z-index: 2;
+    width: 53rem;
+    height: 12rem;
+    background-color: @color3;
+    }
+
+
+    &__subtitle {
+    font-family: @font3;
+    color: @color2;
+    font-size: 2.1rem;
+    transform: translateX(9rem);
+    width: fit-content;
+    padding-top: .5rem;
+    user-select: none;
+    }
+
+    &__subtitle:first-child {
+    padding-right: 13rem;
+    }
+
+    &__img {
+    width: 36rem;
+    height: 25rem;
+    background-image: url("@{img}img2.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    transform: translateY(5rem);
+
+    }
+
+}
+

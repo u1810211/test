@@ -1,0 +1,148 @@
+// main: ../style.less
+
+.gallery {
+    height: 73rem;
+
+    &__title {
+    font-family: @font1;
+    color: @color3;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    margin-top: 7rem;
+    margin-right: 5rem;
+    }
+
+    &__inner {
+    display: flex;
+    justify-content: center;
+    }
+
+    &__line {
+    position: absolute;
+    left: 21.8%;
+    width: 13rem;
+    height: 73rem;
+    background-color: @color3;
+    z-index: 1;
+    }
+
+    &__images {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 2rem;
+    z-index: 2;
+    }
+
+    &__img:nth-child(1) {
+    background: url("@{img}gallery.png") no-repeat;
+    height: 30rem;
+    width: 115rem;
+    }
+
+    &__img:nth-child(2) {
+    background: url("@{img}gallery1.png") no-repeat;
+    height: 30rem;
+    width: 56rem;
+    margin-left: .5rem;
+    }
+
+    &__img:nth-child(3) {
+    background: url("@{img}gallery2.png") no-repeat;
+    height: 30rem;
+    width: 68rem;
+    margin-left: .5rem;
+    }
+
+    &__content {
+    margin-top: 5rem;
+    position: relative;
+    z-index: 2;
+    }
+
+    &__content__title {
+    font-family: @font1;
+    color: @color2;
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 3rem;
+    }
+
+    &__content__border {
+    width: 40.3rem;
+    }
+
+    &__content__inner {
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    }
+
+    &__content__inner:last-child {
+    text-align: center;
+    width: 26rem;
+    position: absolute;
+    transform: translateX(16rem);
+    }
+
+    &__content__text {
+    font-family: @font3;
+    color: @color2;
+    font-size: 1.36rem;
+    line-height: 1.9;
+    }
+
+    &__content__text:last-child {
+    color: @color3;
+    font-size: 1.75rem;
+    line-height: 0;
+    margin: .1rem 0 0 8.5rem;
+    font-weight: 900;
+    }
+
+    &__content__author {
+    font-family: @font4;
+    color: @color2;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    }
+
+    &__content__info-1 {
+    font-family: @font3;
+    color: @color2;
+    font-size: 1.3rem;
+    }
+
+    &__content__info-2 {
+    font-family: @font3;
+    color: @color2;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    }
+
+    &__content__social__icons {
+    margin-left: 7rem;
+    }
+
+    &__social__icon {
+    width: 2.9rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    background-color: @color2;
+    border: 0rem solid #fff;
+    border-radius: 50%;
+    padding: .7rem 0px;
+    margin: 0 .4rem;
+    transition: all .5s ease;
+    cursor: pointer;
+    }
+
+    &__social__icon:hover {
+    background-color: @color1;
+    color: @color2;
+    transition: all .5s ease;
+    }
+}

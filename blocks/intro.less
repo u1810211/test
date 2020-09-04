@@ -1,0 +1,70 @@
+// main: ../style.less
+
+
+.intro {
+    display: flex;
+    width: 100%;
+    background: url("@{img}img1.png") center no-repeat;
+    background-size: cover;
+    height: 60rem;
+
+
+    &__inner {
+    width: 100%;
+    height: 60rem;
+    }
+
+    &__line {
+    height: 12.1rem;
+    background-color: @color3;
+
+    }
+
+    &__title {
+    font-size: 8rem;
+    font-family: @font1;
+    font-weight: 900;
+    color: @color2;
+    user-select: none;
+    }
+
+    &__title span {
+    font-size: 7rem;
+    display: block;
+    letter-spacing: .4rem;
+    margin-top: -1.7rem;
+    font-family: @font1;
+    user-select: none;
+    }
+
+    &__line {
+    transform: translateY(25.2rem);
+    width: 100%;
+    }
+
+    &__content {
+    display: flex;
+    position: relative;
+    margin-top: 13rem;
+    margin-left: 10rem;
+    z-index: 2;
+    }
+
+    &__read__more {
+    border: .2rem solid @color2;
+    height: 5rem;
+    width: 18.8rem;
+    margin-top: 9.5rem;
+    margin-left: 3rem;
+    background-color: @color3;
+    }
+
+    &__read__more__text {
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: @font1;
+    font-weight: 600;
+    padding: 1rem 0 0 4rem;
+    user-select: none;
+    }
+}

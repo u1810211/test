@@ -1,0 +1,107 @@
+// main: ../style.less
+
+.concept {
+    height: 17rem;
+    margin-top: 6rem;
+
+    &__content {
+    text-align: center;
+    }
+
+    &__title {
+    font-family: @font3;
+    font-weight: 400;
+    color: @color3;
+    font-size: 2.3rem;
+    letter-spacing: .1rem;
+    }
+
+    &__title span {
+    font-family: @font1;
+    font-weight: 900;
+    }
+
+    &__text {
+    font-family: @font4;
+    font-weight: 400;
+    color: @color2;
+    font-size: 1rem;
+    }
+
+    &__subtitle {
+    font-family: @font4;
+    font-weight: 700;
+    color: @color2;
+    font-size: .8rem;
+    }
+
+    &__masterclass {
+        background: url("@{img}img4.png") center no-repeat;
+        background-size: cover;
+        height: 70rem;
+    }
+
+    &__masterclass__content {
+    position: absolute;
+    right: 0;
+    transform: translate(-8rem, 5rem);
+    }
+
+    &__masterclass__title {
+    font-family: @font3;
+    color: @color2;
+    font-size: 2.5rem;
+        margin-left: 10rem;
+    }
+
+    &__masterclass__border {
+    position: absolute;
+    right: 0;
+    transform: translateY(4rem);
+    width: 31rem;
+    height: 37.5rem;
+    background-color: @color3;
+    padding: 5.7rem 3.9rem
+    }
+
+
+    &__masterclass__border__article {
+    font-family: @font3;
+    color: @color2;
+    font-size: 2.8rem;
+    }
+
+    &__masterclass__border__text {
+    color: @color2;
+    font-family: @font3;
+    font-size: 2.35rem;
+    letter-spacing: .1rem;
+    }
+
+    &__masterclass__border__info {
+    font-family: @font3;
+    font-size: 2rem;
+    color: @color2;
+    text-align: right;
+    margin-top: 5rem;
+    }
+
+    &__masterclass__border__info span:last-child {
+    display: block;
+    }
+
+    &__masterclass__apply__border {
+    transform: translateY(44rem);
+    width: 26.8rem;
+    height: 7.1rem;
+    background-color: @color3;
+    padding: 3rem 2rem;
+    letter-spacing: .1rem
+    }
+
+    &__masterclass__apply__border__text {
+    font-family: @font3;
+    color: @color2;
+    font-size: 2rem;
+    }
+}
